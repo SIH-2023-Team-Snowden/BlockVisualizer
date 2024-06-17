@@ -10,7 +10,8 @@
     "dev": "concurrently \"yarn dev:client\" \"yarn dev:server\"",
     "build:client" : "yarn workspace client build",
     "build:server" : "yarn workspace server generate  && yarn workspace server migrate",
-    "serve": "yarn workspace server start"
+    "serve": "yarn workspace server start",
+    "start" : "yarn workspace server generate  && yarn workspace server migrate && yarn workspace server start"
   },
   "license": "MIT",
   "workspaces": [

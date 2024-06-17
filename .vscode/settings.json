@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/20239aec-6aa5-49dd-8ea2-61eff29a34b8/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/snowdentest",
+    "appService.deploySubpath": "."
+}

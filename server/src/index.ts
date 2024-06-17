@@ -142,7 +142,7 @@ app.get("/address/tx", async (req, res) => {
   }
 
   let CoinType = await axios.get(
-    ("http://localhost:3000/search?parameters=" +
+    ("http://https://blockchain-visualizer-production-5ca8.up.railway.app:3000/search?parameters=" +
       req.query.parameters) as string
   );
   const CoinChain = CoinType.data.chain;
@@ -261,7 +261,7 @@ app.get("/transaction/addr", async (req, res) => {
       return;
     }
     let CoinType = await axios.get(
-      ("http://localhost:3000/search?parameters=" +
+      ("http://https://blockchain-visualizer-production-5ca8.up.railway.app:3000/search?parameters=" +
         req.query.parameters) as string
     );
     const CoinChain = CoinType.data.chain;
@@ -472,7 +472,7 @@ app.get("/transaction", async (req, res) => {
     }
 
     let CoinType = await axios.get(
-      "http://localhost:3000/search?parameters=" + TransactionID
+      "http://https://blockchain-visualizer-production-5ca8.up.railway.app/:3000/search?parameters=" + TransactionID
     );
     let InAddres = null;
     let OutAddres = null;
@@ -796,6 +796,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(process.cwd(), "..", "client", "dist", "index.html"));
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server Started on 3000");
 });
