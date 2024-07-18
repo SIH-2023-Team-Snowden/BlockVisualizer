@@ -18,6 +18,9 @@
     "client",
     "server"
   ],
+  "resolutions": {
+    "strip-ansi": "6.0.0"
+  },
   "private": true,
   "dependencies": {
     "concurrently": "^8.2.2",
