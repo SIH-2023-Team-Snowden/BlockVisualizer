@@ -142,7 +142,7 @@ app.get("/address/tx", async (req, res) => {
   }
 
   let CoinType = await axios.get(
-    ("http://https://blockchain-visualizer-production-5ca8.up.railway.app:3000/search?parameters=" +
+    ("https://snowden.wtf/search?parameters=" +
       req.query.parameters) as string
   );
   const CoinChain = CoinType.data.chain;
@@ -261,7 +261,7 @@ app.get("/transaction/addr", async (req, res) => {
       return;
     }
     let CoinType = await axios.get(
-      ("http://https://blockchain-visualizer-production-5ca8.up.railway.app:3000/search?parameters=" +
+      ("https://snowden.wtf/search?parameters=" +
         req.query.parameters) as string
     );
     const CoinChain = CoinType.data.chain;
@@ -472,7 +472,7 @@ app.get("/transaction", async (req, res) => {
     }
 
     let CoinType = await axios.get(
-      "http://https://blockchain-visualizer-production-5ca8.up.railway.app/:3000/search?parameters=" + TransactionID
+      "https://snowden.wtf/:3000/search?parameters=" + TransactionID
     );
     let InAddres = null;
     let OutAddres = null;
