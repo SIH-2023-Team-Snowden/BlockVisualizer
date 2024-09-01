@@ -11,7 +11,7 @@ export default function AboutUSPage() {
             About <span className="text-blue-600 ">Snowden</span>
           </div>
           <div className="prose text-lg mt-4 max-w-none tablet:prose-xl prose-p:my-2 prose-p:text-lg prose-li:text-lg prose-ul:list-disc prose-li:marker:text-black prose-a:text-primary prose-a:no-underline">
-           We are Team Snow from Graphic Era , 3rd Yr Students of Graphic Era Dehradhun , 2023 SIH Finalist 
+           We are Team Snow from Graphic Era , 3rd Yr Students of Graphic Era Dehradhun , 2023 SIH Finalist (North Region) 
           </div>
           <div className="max-w-xl mt-7 mx-auto  text-2xl font-semibold  tracking-tight leading-tight">
             Meet Our  <span className="text-blue-600 ">Amazing Team</span>
