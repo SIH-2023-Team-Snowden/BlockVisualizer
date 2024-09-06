@@ -18,3 +18,5 @@ jobs:
           password: ${{ secrets.PASS }}
           script: |
             whoami
+            cd ~/BlockVisualizer
+            pwd
