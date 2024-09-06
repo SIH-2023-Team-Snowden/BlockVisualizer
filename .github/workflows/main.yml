@@ -20,5 +20,4 @@ jobs:
             whoami
             cd ~/BlockVisualizer
             pwd
-            fuser -k 3000/tcp
-            screen -dm bash -c "yarn serve"
+            npm run ssh
