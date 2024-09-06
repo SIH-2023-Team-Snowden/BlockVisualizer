@@ -12,7 +12,8 @@
     "build:server" : "yarn workspace server generate  && yarn workspace server migrate",
     "serve": "yarn workspace server start",
     "start" : "yarn workspace server generate  && yarn workspace server migrate && yarn workspace server start",
-    "pm2": "pm2 start yarn --interpreter bash --name snowden -- start"
+    "pm2": "pm2 start yarn --interpreter bash --name snowden -- start",
+    "ssh" : "fuser -k 3000 && screen -dm bash -c \"yarn serve\""
   },
   "license": "MIT",
   "workspaces": [
