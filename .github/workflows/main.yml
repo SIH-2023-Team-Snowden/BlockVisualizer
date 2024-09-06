@@ -1,0 +1,22 @@
+name: Server Refresh
+
+on:
+   workflow_dispatch:
+     inputs: 
+       - 
+
+jobs:
+  build:
+    name: Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy using SSH
+        uses: appleboy/ssh-action@v1.0.3
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        with:
+          host: ${{ secrets.EC2_HOST_DNS }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+    
