@@ -17,7 +17,8 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
           script: |
-            whoami
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             cd ~/BlockVisualizer
             pwd
             npm run ssh
