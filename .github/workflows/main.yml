@@ -13,8 +13,8 @@ jobs:
         env:
           REPO_NAME: ${{ github.event.repository.name }}
         with:
-          host: ${{ secrets.EC2_HOST_DNS }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASS }}
           script: |
-    
+            whoami
